@@ -147,6 +147,8 @@ function bookAppointment(patientName, doctorName, appointmentTime) {
     // }
 
     const isAnyDoctorAvailable = findAvailableDoctor(appointmentTime);
+
+    // console.log(isAnyDoctorAvailable);
     if(isAnyDoctorAvailable){
         isAnyDoctorAvailable.appointments.push(appointmentTime);
         result = `Appointment booked for ${patientName} with ${isAnyDoctorAvailable.name} at ${appointmentTime}.`;
