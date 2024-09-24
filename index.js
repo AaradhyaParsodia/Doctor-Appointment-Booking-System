@@ -84,7 +84,6 @@ function bookAppointment(patientName, doctorName, appointmentTime) {
                 }
                 else{
                     // console.log("ddd");
-                    element.appointments.push(appointmentTime);
                     return `Appointment booked for ${patientName} with ${doctorName} at ${appointmentTime}.`;
                 }
     
@@ -150,7 +149,6 @@ function bookAppointment(patientName, doctorName, appointmentTime) {
 
     // console.log(isAnyDoctorAvailable);
     if(isAnyDoctorAvailable){
-        isAnyDoctorAvailable.appointments.push(appointmentTime);
         result = `Appointment booked for ${patientName} with ${isAnyDoctorAvailable.name} at ${appointmentTime}.`;
     }
     else {
